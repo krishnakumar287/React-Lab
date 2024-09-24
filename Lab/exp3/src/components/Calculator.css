@@ -1,0 +1,103 @@
+/* General Calculator Styles */
+.calculator {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .display {
+    margin-bottom: 20px;
+  }
+  
+  .display input {
+    width: 95%;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .display h2 {
+    margin: 10px 0 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: right;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+  }
+  
+  .numbers, .operators {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* Numbers section */
+  .numbers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .numbers button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .numbers button:hover {
+    background-color: #444;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  /* Operator section */
+  .operators {
+    grid-template-columns: 1fr;
+  }
+  
+  .operators button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #ff4200;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .operators button:hover {
+    background-color: #e63c00;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  /* Clear and Equal buttons */
+ 
+  button:nth-of-type(6):hover,
+  button:nth-of-type(5):hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+  }
+  
+  /* Transitions */
+  button {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
