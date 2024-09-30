@@ -1,4 +1,4 @@
-Create annsimple website for client using components,elements and styles
+Create an simple website for client using components,elements and styles
 ## Screenshots
 
 ![App Screenshot](https://i.ibb.co/fQ293tm/image.png)
